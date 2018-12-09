@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>exhibition</title>
+	<link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+	<style>
+		body {
+			margin: 0 auto;
+			padding: 0;
+			font-family: 'Gothic A1', sans-serif;
+		}
+		#header
+      {
+         width: 1700px;
+         height: 100px;
+         z-index: 3;
+      }
+      #header .menu
+      {   width: 800px;
+         height: 100px;
+         z-index: 2;
+      }
+      .title
+{
+   position: absolute;
+   top: 60px;
+   left: 200px;
+   transform: translate(-50%,-50%);
+   width: 300px;
+   height: 70px;
+   border: 1px solid #000;
+   padding: 20px;
+   box-sizing: border-box;
+   text-align: center;
+   box-shadow: 0 10px 15px rgba(0,0,0,.5);
+   overflow: hidden;
+}
+.title:before
+{
+   content: '';
+   position: absolute;
+   top:0;
+   left: 0;
+   width:100%;
+   height: 100%;
+   background: #000;
+   mix-blend-mode: difference;
+}
+.title:after
+{
+   content: '';
+   position: absolute;
+   top: 0;
+   left: -50%;
+   width: 100%;
+   height: 100%;
+   background: #fff;
+   mix-blend-mode: difference;
+   transition: 2s;}
+.title:hover:after
+{
+   left:50%;
+}
+h4
+{
+   margin: 0 0 40px;
+   font-size: 1.3em;
+   padding: 0;
+   color: #fff;
+}
+      ul
+      {   margin-top: 20px;
+         position: absolute;
+         left: 1145px;
+         display: flex;
+         z-index: 3;
+      }
+      ul li
+      {
+         list-style: none;
+         padding:10px 30px; 
+      }   
+      ul li a
+      {
+         text-decoration: none;
+         text-transform: uppercase;
+         font-size: 1.1em;
+         color: #262626;
+         position: relative;
+      }
+      ul li a:before
+      {
+         content: '';
+         width: 10px;
+         height: 5px;
+         background: pink;
+         position: absolute;
+         top: 100%;
+         left:0;
+         transition: .5s;
+      }
+      ul li:hover a:before
+      {
+         width:50%;
+         transform: translateX(100%);
+      }
+		#textbox {
+         font-family: 'Gothic A1', sans-serif;
+			position: absolute;
+			top: 300px;
+			left: 150px;
+			width: 445px;
+		}
+		#textbox h1 {
+			font-size: 1em;
+		}
+		#art40 {
+			position: absolute;
+			top: 200px;
+			right: 150px;
+         width: 800px;
+		}
+      #footer{
+   position: absolute;
+   bottom:-800px;
+   left: 0px;
+   width: 100%;
+}
+h2 {
+   margin: 0;
+   padding: 0;
+   font-size: 0.5em
+}
+#footer2{
+   position: absolute;
+   bottom: -880px;
+   left: 0px;
+   width: 100%;
+}
+h3 {
+   margin: 0;
+   padding: 0;
+   font-size: 0.5em
+}	
+	</style>
+</head>
+<body>
+	<content>
+      <header>
+         <div class="title">
+      <h4>Exhibition Archive</h4>
+   </div>
+         <div class="menu">
+            <ul>
+               <li onclick="location.href=''"><a href="#">site?</a></li>
+               <li onclick="location.href=''"><a href="#">archive</a></li>
+               <li onclick="location.href=''"><a href="#">gallery</a></li>
+               <li onclick="location.href='https://leekyuri.github.io/11_project1/'"><a href="#">FAQ</a></li>
+            </ul>
+         </div>
+      </header>
+      <div class="box"></div>
+   </content>
+      </div>
+	<div id="textbox">
+		<h1>박광진 : 자연의 소리</h1>
+      <hr>
+		<h2>전시회</h2>
+		<p>기간 : 2017.11.11. (토) ~ 2018.11.08. (목)<br>시간 : 09:00 ~ 18:00<br>장소 : 제주현대미술관<br>요금 : 어른 : 2,000원 청소년,군인 : 1,000원 어린이 : 500원 6세 이하,65세 이상,장애인 : 무료관람<br>설명 : 제주 자연의 매력에 심취해 50여 년을 제주 풍경화에 천착해온 박광진 작가가 제주현대미술관에 기증한 소장품 149점 중에서 「자연의 소리」 시리즈 30점을 선별하여 구성한 전시이다.</p>
+	</div>
+	<img src="a40.jpg" id="art40"/>
+   <div id="footer">
+      <center>
+         <h2>ⓒ2018 expber All rights reserved<br><br></h2>
+         <hr>
+      </center>
+   </div>
+   <div id="footer2">
+      <center>
+         <h3>PRIVACY POLICY　　　　　　　│　　　　　　　TERMS AND CONDITIONS　　　　　　　│　　　　　　　GET SUBSCRIBED<br><br>
+            이메일 문의　　　│　　　개인정보취급방침　　　│　　　권리 침해 신고　　　│　　　광고　　　│　　　모바일　　　│　　　 앱 설치<br><br><br><br>
+         </h3>
+      </center>
+   </div>   
+</body>
+</html>
